@@ -5,7 +5,7 @@ class doctor name age sidekick =
         val name:string                 = name
         val mutable age:int             = age
         val sidekick:People.people      = sidekick
-        val hp                          = 100
+        val mutable hp                  = 100
 
         method talk                     = print_endline "Hi! I'm the Doctor!"
         method to_string                =   "My name is " ^ name ^ ", I've \
@@ -64,5 +64,8 @@ class doctor name age sidekick =
         |_____________________________________________| \027[0m"
         method travel_in_time start arrival =   age <- age + (arrival - start);
                                                 self#draw_tardis ()
+        method use_sonic_screwdriver ()     = print_endline "Whiiiiwhiiiwhiii \
+        Whiiiiwhiiiwhiii Whiiiiwhiiiwhiii"
+        method private regenerate ()        = hp <- 100
     end
 
