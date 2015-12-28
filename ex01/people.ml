@@ -1,6 +1,6 @@
 class people name =
     object
-        initializer print_endline "Created"
+        initializer print_endline (name ^ " created")
         val name = name
         val hp = 100
 
