@@ -10,3 +10,5 @@ This is the first day about OOP in OCaml.
 * Private methods
 * Parametrized classes
 * Functionnal classes
+
+All exercices are done.
