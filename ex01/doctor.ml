@@ -12,7 +12,7 @@ class doctor name age sidekick =
                                             got " ^ (string_of_int hp) ^ " hp \
                                             and I'm " ^ (string_of_int age) ^
                                             " years old."
-       method private draw_tardis ()    = print_endline "
+       method private draw_tardis ()    = print_endline "\027[34m
                              __-__
                             /_---_\\
                              |###|
@@ -61,7 +61,7 @@ class doctor name age sidekick =
           |   | |___________| | | |___________| |   |
           |   |               | |               |   |
         |¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
-        |_____________________________________________|"
+        |_____________________________________________| \027[0m"
         method travel_in_time start arrival =   age <- age + (arrival - start);
                                                 self#draw_tardis ()
     end
